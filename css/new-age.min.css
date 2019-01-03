@@ -162,9 +162,9 @@
      padding-top: 150px;
      padding-bottom: 100px;
      color: #fff;
-     background: url(../img/bg-pattern.png), #FF4081;
-     background: url(../img/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#388E3C), to(#4CAF50));
-     background: url(../img/bg-pattern.png), linear-gradient(to left, #388E3C, #4CAF50)
+     background:  #FF4081;
+     background:  -webkit-gradient(linear, right top, left top, from(#388E3C), to(#4CAF50));
+     background: linear-gradient(to left, #388E3C, #4CAF50)
  }
  
  header.masthead .header-content {
@@ -186,7 +186,43 @@
  header.masthead .device-container .screen img {
      border-radius: 3px
  }
- 
+ header.quotehead {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    color: #fff;
+    background:  #FF4081;
+    background: -webkit-gradient(linear, right top, left top, from(#388E3C), to(#4CAF50));
+    background:  linear-gradient(to left, #388E3C, #4CAF50)
+}
+
+header.quotehead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center
+}
+
+header.quotehead .header-content h1 {
+    font-size: 30px
+}
+
+
+ @media (min-width:992px) {
+    header.quotehead {
+        height: 100vh;
+        min-height: 200px;
+        padding-top: 0;
+        padding-bottom: 0
+    }
+    header.quotehead .header-content {
+        margin-bottom: 0;
+        text-align: left
+    }
+    header.quotehead .header-content h1 {
+        font-size: 50px
+    }
+}
  @media (min-width:992px) {
      header.masthead {
          height: 100vh;
@@ -446,3 +482,27 @@
      font-size: 11px;
      padding: 15px 45px
  }
+
+.status{
+    color: #d73925;
+}
+.contact-form{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-form form{
+    padding: 10%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #fff;
+}
